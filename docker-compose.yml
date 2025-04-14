@@ -1,4 +1,11 @@
 services:
+  app:
+    image: byeoon/cicd-study:latest
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+
   jenkins:
     image: jenkins/jenkins:2.471-jdk21
     ports:
@@ -22,3 +29,4 @@ services:
     image: sonarqube:9-community
     ports:
       - "9000:9000"
+
