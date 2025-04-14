@@ -43,7 +43,7 @@ jobs:
 
       - name: Add version
         run: |
-          mv build/libs/cicd-study/cicd-study-0.0.1-SNAPSHOT.jar build/libs/cicd-study-${{ steps.set-version.outputs.VERSION_NAME }}.jar
+          mv build/libs/cicd-study-cicd-study-0.0.1-SNAPSHOT.jar build/libs/cicd-study-${{ steps.set-version.outputs.VERSION_NAME }}.jar
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
