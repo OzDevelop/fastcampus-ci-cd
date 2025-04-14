@@ -24,7 +24,7 @@ jobs:
         with:
           java-version: 21
           distribution: 'temurin'
-
+  
       - name: Build with Gradlew
         run: ./gradlew clean test bootJar
 
